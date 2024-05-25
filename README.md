@@ -44,6 +44,3 @@ This repository contains scripts to install and configure Zabbix for monitoring 
 - Make sure to set up an App Password in Gmail for use with `ssmtp` if 2-step verification is enabled.
 - Adjust the database and email settings as needed.
 
-## License
-
-This project is licensed under the MIT License.
