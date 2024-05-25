@@ -65,7 +65,22 @@ This repository contains scripts to install and configure Zabbix for monitoring 
    - **Use if severity**: Select the severity levels you want to be notified about.
 5. Click **Add** to save the user and media.
 
-### Step 4: Create a Host and Link to a Template
+### Step 4: Configure Email Settings in the UI
+
+1. Navigate to **Administration** > **General**.
+2. In the dropdown menu, select **Email**.
+3. Configure the email settings:
+   - **SMTP server**: `smtp.gmail.com`
+   - **SMTP server port**: `587`
+   - **SMTP helo**: `smtp.gmail.com`
+   - **SMTP email**: `your-email@gmail.com`
+   - **Connection security**: `STARTTLS`
+   - **SMTP authentication**: `Username and password`
+   - **Username**: `your-email@gmail.com`
+   - **Password**: `your-app-password`
+4. Click **Update** to save the email settings.
+
+### Step 5: Create a Host and Link to a Template
 
 1. Navigate to **Configuration** > **Hosts**.
 2. Click on **Create host**.
@@ -78,7 +93,7 @@ This repository contains scripts to install and configure Zabbix for monitoring 
    - Link to a template (e.g., `Template OS Linux`).
 5. Click **Add** to save the host.
 
-### Step 5: Create a Trigger
+### Step 6: Create a Trigger
 
 1. Navigate to **Configuration** > **Hosts**.
 2. Click on the **Triggers** link for the host you created.
@@ -89,7 +104,7 @@ This repository contains scripts to install and configure Zabbix for monitoring 
    - **Severity**: Choose a severity level (e.g., `High`).
 5. Click **Add** to save the trigger.
 
-### Step 6: Create an Action
+### Step 7: Create an Action
 
 1. Navigate to **Configuration** > **Actions**.
 2. Click on **Create action**.
@@ -103,7 +118,7 @@ This repository contains scripts to install and configure Zabbix for monitoring 
    - **Send only to**: `Email`
 5. Click **Add** to save the action.
 
-### Step 7: Test the Configuration
+### Step 8: Test the Configuration
 
 1. Generate a test event that will trigger the alert (e.g., artificially increase CPU load on the host).
 2. Check your email for the alert notification.
